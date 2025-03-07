@@ -1,0 +1,22 @@
+{
+  "name": "apiautomationtsplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juli-Kumari/ApiAutomationTsPlaywright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juli-Kumari/ApiAutomationTsPlaywright/issues"
+  },
+  "homepage": "https://github.com/Juli-Kumari/ApiAutomationTsPlaywright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.9"
+  }
+}
