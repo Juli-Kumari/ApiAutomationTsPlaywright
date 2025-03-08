@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:dev": "cross-env TEST_ENV=dev npx playwright test",
+    "test:UAT": "cross-env TEST_ENV=uat npx playwright test",
+    "test:sit": "cross-env TEST_ENV=sit npx playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Juli-Kumari/ApiAutomationTsPlaywright.git"
@@ -19,5 +23,9 @@
     "@playwright/test": "^1.51.0",
     "@types/node": "^22.13.9",
     "playwright": "^1.51.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7"
   }
 }
