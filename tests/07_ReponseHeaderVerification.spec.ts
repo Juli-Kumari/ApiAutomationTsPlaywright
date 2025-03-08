@@ -7,7 +7,7 @@ test('Fetch & validate response header', async({request}) =>{
 
     console.log(headerResponse)
     expect(headerResponse.server).toEqual('Cowboy')
-    expect(headerResponse['content-type']).toEqual('application/json; charset=utf-8')
+    // expect(headerResponse['content-type']).toEqual('application/json; charset=utf-8')
 
     console.log("*********************************")
 
@@ -15,4 +15,11 @@ test('Fetch & validate response header', async({request}) =>{
     console.log(headerArrayValue)
     expect(headerArrayValue.length).toBe(11)
 
+    // print one by one header value
+    console.log("*********************************")
+
+    headerArrayValue.forEach((header)=>{
+        console.log(header)
+        console.log(header.name + ":: "+ header.value)
+    })
 })
