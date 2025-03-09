@@ -26,3 +26,8 @@ inside package.josn
   },
 
 10. In Built Reporters | List, Line, Dot, HTML,Blob, Json, Junit, Github Reporters 
+    1. npx playwright test tests/Reporters/ --reporter=list
+    2.
+    3.
+    4.
+    5. 

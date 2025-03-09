@@ -10,7 +10,8 @@ import dotenv from "dotenv";
 
 dotenv.config({
   // path: './env-files/.env.dev'
-  path: process.env.TEST_ENV ? `./env-files/.env.${process.env.TEST_ENV}`
+  path: `./env-files/.env.${process.env.TEST_ENV}`
+  // path: process.env.TEST_ENV ? `./env-files/.env.${process.env.TEST_ENV}`
 })
 
 /**
@@ -27,7 +28,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  // reporter: 'html',
+  reporter: 'list',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
