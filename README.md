@@ -27,7 +27,19 @@ inside package.josn
 
 10. In Built Reporters | List, Line, Dot, HTML,Blob, Json, Junit, Github Reporters 
     1. npx playwright test tests/Reporters/ --reporter=list
-    2.
-    3.
-    4.
-    5. 
+    2. npx playwright test tests/Reporters/ --reporter=line
+    3. npx playwright test tests/Reporters/ --reporter=dot
+    4. npx playwright test tests/Reporters/ --reporter=html (npx playwright show-report)
+    5. npx playwright test tests/Reporters/ --reporter=blob
+    6. npx playwright test tests/Reporters/ --reporter=json || (set PLAYWRIGHT_JSON_OUTPUT_NAME=report.json, npx playwright test tests/Reporters/)
+    7. npx playwright test tests/Reporters/ --reporter=junit || (set PLAYWRIGHT_JUNIT_OUTPUT_NAME=reportjunit.xml, npx playwright test tests/Reporters/)
+    (TO see the report in proper format, open XML file inside "https://lotterfriends.github.io/online-junit-parser/")
+    8. GITHUB used format inside playwright.config (reporter: process.env.CI ? 'github': 'line',)
+    9. multiple report (reporter: [['line'], ['blob'], ['dot']],)
+
+11. Allure report
+   1. npm i allure-playwright
+   2. npx playwright test tests/Reporters/ --reporter=allure-playwright
+   3. allure generate allure-results || (npx allure generate allure-results => using "awesome")
+   4. npx allure generate allure-results -o Allure_Report_Folder
+   5. npx allure open allure-results
