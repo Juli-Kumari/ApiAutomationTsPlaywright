@@ -46,3 +46,7 @@ inside package.josn
 
 ###### NOTES: 
 https://docs.google.com/document/d/e/2PACX-1vQWL3T7iUD8DeMPM4OV2x6ZaW8aQgYw2Z7gIQTVmNYa-QhFeo5rT29BTJ5427-QqoBHKokVtLUbU1oy/pub
+
+---------------------CI CD-----------
+1. CI using GitHub Actions | Continuous Integration 
+2. npm init playwright@latest
