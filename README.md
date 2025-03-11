@@ -47,8 +47,14 @@ inside package.josn
 ###### NOTES: 
 https://docs.google.com/document/d/e/2PACX-1vQWL3T7iUD8DeMPM4OV2x6ZaW8aQgYw2Z7gIQTVmNYa-QhFeo5rT29BTJ5427-QqoBHKokVtLUbU1oy/pub
 
----------------------CI CD-----------
+---------------------A.CI CD-----------
 1. CI using GitHub Actions | Continuous Integration 
 2. npm init playwright@latest
 3. run on all OS => [runs-on: ubuntu-latest windows-latest macos-latest]
 4. npx palywright show-report => run on localhost, to access the videos and screenshot inside report
+5. download GITHUB ACTION in Vs code extension to see the flow.
+
+--------------------B. Jenkins --------------
+1. CI using Jenkins | Jenkins Setup & Integration with Local Playwright Project 
+2. download node, java, jenkins (https://www.jenkins.io/doc/book/installing/linux/#debianubuntu)
+3. 
